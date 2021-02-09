@@ -40,7 +40,7 @@
                 </button>
 
                 <p>
-                    <strong>This is a tool by <a href="haykranen.nl">Hay Kranen</a> to read your old MSN Messenger XML chat logs</strong>
+                    <strong>This is a tool by <a href="https://www.haykranen.nl">Hay Kranen</a> to read your old MSN Messenger XML chat logs</strong>
                 </p>
 
                 <p>
