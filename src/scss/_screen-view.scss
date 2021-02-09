@@ -1,0 +1,35 @@
+.screen-view {
+    display: grid;
+    grid-template-rows: var(--header-height) 1fr;
+    min-height: 100vh;
+
+    &__message {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    &__about {
+        padding: 2rem;
+        @include child-margins(2rem);
+        max-width: 60rem;
+        @include margin-center;
+    }
+
+    &__link {
+        text-align: center;
+        text-decoration: underline;
+        font-weight: bold;
+        display: block;
+        @include margin-center;
+    }
+
+    &__coffee {
+        margin-top: 2rem;
+        width: 20rem;
+    }
+}

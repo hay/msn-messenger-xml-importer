@@ -1,0 +1,32 @@
+.drag-drop {
+    padding: 4rem;
+    transition: 300ms background;
+    background: var(--g-1);
+    @include wh(100%);
+    @include flex-center;
+
+    &[dragover] {
+        background: var(--c-2);
+    }
+
+    &__help,
+    &__error {
+        text-align: center;
+    }
+
+    &__help {
+        font-size: 2.4rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        height: 5rem;
+        margin-right: 1rem;
+    }
+
+    &__error {
+        font-size: 2rem;
+    }
+}

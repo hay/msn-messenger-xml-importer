@@ -1,0 +1,39 @@
+.header {
+    position: sticky;
+    top: 0;
+    background: var(--g-1);
+    color: var(--c-1);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__nav {
+        display: flex;
+    }
+
+    &__nav button {
+        text-decoration: underline;
+        font-size: 14px;
+        margin-right: 1rem;
+    }
+
+    &__title {
+        display: flex;
+        font-size: 2.4rem;
+    }
+
+    &__title span {
+        line-height: 1.7;
+    }
+
+    &__icon {
+        height: 3rem;
+        margin-right: 1rem;
+    }
+
+    &__link {
+        color: white;
+        margin-left: 1rem;
+    }
+}

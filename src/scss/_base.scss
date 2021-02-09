@@ -1,0 +1,30 @@
+body {
+    overflow-x: hidden;
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+    color: var(--c-1);
+}
+
+a {
+    text-decoration: none;
+}
+
+main[v-cloak] {
+    &:before {
+        font-family: sans-serif;
+        content: 'Loading...';
+        color: black;
+        font-size: 5rem;
+        padding: 1rem;
+        display: flex;
+        @include wh(100vw, 100vh);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    > * {
+        display: none;
+    }
+}

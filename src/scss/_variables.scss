@@ -1,0 +1,13 @@
+:root {
+    --c-1: #505a81; // Dark Blue
+    --c-2: #d4e2f4; // Medium blue
+    --c-3: #ecf0f4; // Light blue
+    --g-1: linear-gradient(
+        0deg,
+        var(--c-3) 0%,
+        var(--c-2) 50%,
+        var(--c-3) 100%
+    );
+
+    --header-height: 5rem;
+}

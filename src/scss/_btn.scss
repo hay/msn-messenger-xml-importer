@@ -1,0 +1,10 @@
+.btn {
+    &--link {
+        text-decoration: underline;
+        color: var(--c-3);
+    }
+
+    &--link:hover {
+        cursor: pointer;
+    }
+}

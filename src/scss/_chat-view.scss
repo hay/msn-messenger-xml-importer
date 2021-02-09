@@ -1,0 +1,30 @@
+.chat-view {
+    display: flex;
+    flex-direction: column;
+    @include child-margins(2rem);
+    padding: 2rem;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        background: var(--c-3);
+        padding: 1rem;
+        border-radius: 1rem;
+        font-size: 16px;
+    }
+
+    &__item:nth-child(even) {
+        margin-left: auto;
+    }
+
+    &__time {
+        font-size: 14px;
+        margin-bottom: 1rem;
+    }
+
+    &__user {
+        font-weight: bold;
+        margin-bottom: .5rem;
+    }
+}
