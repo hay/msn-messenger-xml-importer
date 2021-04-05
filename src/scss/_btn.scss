@@ -7,4 +7,18 @@
     &--link:hover {
         cursor: pointer;
     }
+
+    &--donate {
+        background: var(--g-1);
+        border-radius: 1rem;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        width: max-content;
+    }
+
+    &--donate img {
+        width: 4rem;
+        margin-right: 1rem;
+    }
 }

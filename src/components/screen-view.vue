@@ -53,14 +53,12 @@
                 </p>
 
                 <p>
-                    If you found this tool useful, why not <a href="https://www.buymeacoffee.com/hayify">buy me a coffee</a>?
+                    If you found this tool useful, why not <a href="https://www.haykranen.nl/donate/">support my work</a>?
                 </p>
 
-                <a href="https://www.buymeacoffee.com/hayify"
-                   target="_blank">
-                    <img src="../img/coffee.png"
-                         class="screen-view__coffee"
-                         alt="Buy Me A Coffee" />
+                <a href="https://www.haykranen.nl/donate/" class="btn btn--donate">
+                    <img src="./../img/icon.png" alt="MSN logo" />
+                    <span>Support my work</span>
                 </a>
             </article>
         </section>
