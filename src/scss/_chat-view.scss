@@ -1,13 +1,29 @@
 .chat-view {
-    display: flex;
-    flex-direction: column;
-    @include child-margins(2rem);
-    padding: 2rem;
+    overflow: hidden;
+
+    &__info {
+        background: var(--c-3);
+        padding: 1rem;
+        text-align: center;
+        border-radius: 1rem;
+        margin: 2rem auto;
+        width: fit-content;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        @include child-margins(2rem);
+        padding: 2rem;
+        max-width: 100rem;
+        @include margin-center;
+    }
 
     &__item {
         display: flex;
         flex-direction: column;
-        width: 50vw;
+        width: 75%;
+        max-width: 50rem;
         background: var(--c-3);
         padding: 1rem;
         border-radius: 1rem;
@@ -20,11 +36,15 @@
 
     &__time {
         font-size: 14px;
-        margin-bottom: 1rem;
     }
 
     &__user {
         font-weight: bold;
+        font-size: 14px;
         margin-bottom: .5rem;
+    }
+
+    &__text {
+        font-size: 18px;
     }
 }

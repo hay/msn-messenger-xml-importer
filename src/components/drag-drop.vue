@@ -9,6 +9,11 @@
             <span>Drop your MSN XML file here</span>
         </p>
 
+        <p class="drag-drop__help"
+           v-show="loading">
+            <span>Parsing XML file...</span>
+        </p>
+
         <p v-show="error"
            class="drag-drop__error">{{error}}</p>
     </div>
@@ -21,12 +26,14 @@
         data() {
             return {
                 dragover : false,
-                error : false
+                error : false,
+                loading : false
             }
         },
 
         methods : {
             async handleDrop(e) {
+                this.loading = true;
                 this.dragover = false;
                 e.preventDefault();
 
@@ -60,6 +67,7 @@
                 }
 
                 this.$emit('update', data);
+                this.loading = false;
             },
 
             initDrop() {

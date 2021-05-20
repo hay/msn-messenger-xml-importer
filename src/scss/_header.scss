@@ -36,4 +36,10 @@
         color: white;
         margin-left: 1rem;
     }
+
+    @include respond-until($screen-sm) {
+        &[data-loaded="loaded"] &__title span {
+            display: none;
+        }
+    }
 }

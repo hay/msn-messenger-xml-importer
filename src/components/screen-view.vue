@@ -1,6 +1,7 @@
 <template>
     <div class="screen-view">
-        <header class="header">
+        <header class="header"
+                v-bind:data-loaded="data && !about ? 'loaded' : ''">
             <h1 class="header__title">
                 <img
                     class="header__icon"
