@@ -41,12 +41,19 @@ export class MsnXml {
     }
 
     parseFriendlyName(user) {
-        // Check for mulitple users
+        // Check for multiple users
+        let names;
+
         if ('_attributes' in user) {
-            return [ user._attributes.FriendlyName ];
+            names = [ user._attributes.FriendlyName ];
         } else {
-            return user.map(u => u._attributes.FriendlyName);
+            names = user.map(u => u._attributes.FriendlyName);
         }
+
+        // Trim whitespace
+        names = names.map(n => n.trim());
+
+        return names;
     }
 
     parseMessage(message) {
@@ -55,7 +62,7 @@ export class MsnXml {
             datetime : message._attributes.DateTime,
             from : this.parseFriendlyName(message.From.User),
             text : message.Text._text,
-            text_style : message.Text._attributes.Style,
+            text_style : message.Text._attributes?.Style,
             time : message._attributes.Time,
             to : this.parseFriendlyName(message.To.User),
         }
